@@ -11,6 +11,7 @@
 700,ZG502,,Albion COLLEGE
 700,ZV504,,Albion District Library
 100,ZV150,C,Alcona County Library CALEDONIA
+100,ZV150,,Alcona County Library GLENNIE
 100,ZV150,MAI,Alcona County Library HARRISVILLE
 100,ZV150,L,Alcona County Library LINCOLN
 100,ZV150,MIK,Alcona County Library MIKADO
@@ -111,7 +112,7 @@
 700,ZV062,,Charlotte Comm Library
 100,ZV064,,Cheboygan Area Pub Lib
 500,ZV065,216,Chelsea District Library
-500,ZV067,CHE,Chesterfield Twp Lib CHE
+500,ZV567,CHE,Chesterfield Twp Lib CHE
 100,ZV234,FA,Chippewa River FAITH
 100,ZV234,FR,Chippewa River FREMONT
 100,ZV234,SH,Chippewa River SHEPHERD
@@ -152,7 +153,6 @@
 200,ZV387,NC,Croton Township Library
 200,ZV054,MC,Crystal Comm Lib   NO PACK
 101,ZV085,,Crystal FALLS Dist Comm Lib
-100,ZV136,,Curtis TWP Lib Glennie
 400,ZV300,,Cutler Memorial Library  NO PACK
 100,ZV034,,Darcy Library of Beulah
 500,ZV370,7,Dearborn Hgts Lib CK
@@ -297,8 +297,9 @@
 400,ZV163,,Holly Township Library
 200,ZV104,ME,Home Twp Library  NO PACK
 700,ZV164,,Homer Public Library
+200,ZG020,,Hope College
 200,ZG520,,Hope College
-200,ZV165,AH,Hopkins Public Lib NO PACK
+200,ZV165,AH,Hopkins District Library NO PACK
 100,ZV667,HLK,Houghton Lake Public Lib HLK NO PACK
 101,Z0256,,Houghton-Portage Twp Sch
 200,ZV365,OZ,Howard Miller Library/Zeeland
@@ -419,7 +420,7 @@
 100,ZV205,,Luther Area Public Library
 500,ZV242,93,Lyon Twp PUBLIC Lib
 200,ZV206,,Lyons Twp DISTRICT Lib
-500,ZV239,MPL,MacDonald Public Lib  MPL
+500,ZV739,MPL,MacDonald Public Lib  MPL
 100,ZV208,BLIS,Mackinaw Area Pub Lib BLISS
 100,ZV208,MAIN,Mackinaw Area Pub Lib MAIN
 100,ZV208,PELL,Mackinaw Area Pub Lib PELLSTON
@@ -492,7 +493,7 @@
 400,ZV201,,Moore Public Library
 100,ZV221,,Morton Township Library
 400,ZC019,,Mott Community College
-500,ZV233,MTC,Mount Clemens Pub Lib MTC
+500,ZV733,MTC,Mount Clemens Pub Lib MTC
 200,ZV235,,Mulliken Dist Library
 101,Z8013,,Munising SchPub Lib
 101,Z8013,MA,Munising SchPub MATHER
@@ -584,9 +585,9 @@
 500,ZV286,24,Riverview Veterans Memorial Library
 500,ZV787,DU,Rochester Hills PL  DRIVE UP NO PACK
 500,ZV787,,Rochester Hills PL  NO PACK
-500,ZG027,,Rochester University
-500,ZV345,ROG,Romeo DL GRAUBNER BR  ROG
-500,ZV345,ROK,Romeo DL KEZAR BR ROK
+500,ZG027,,Rochester Christian University
+500,ZV845,ROG,Romeo DL GRAUBNER BR  ROG
+500,ZV845,ROK,Romeo DL KEZAR BR ROK
 500,ZV380,22,Romulus Public Library
 100,ZV386,TB,Roscommon Area DL LYON
 100,ZV386,GH,Roscommon Area DL MAIN
@@ -640,10 +641,10 @@
 500,ZV086,71,Springfield Twp Lib
 101,ZV297,,St Ignace Public Lib
 400,ZV294,STC,St. Charles Dist Library STC
-500,ZV295,SCS,St. Clair Shores Public  SCS
+500,ZV795,SCS,St. Clair Shores Public  SCS
 300,ZV299,,St. Joseph/MP Palenske Lib
 700,ZV232,,Stair District Library
-500,ZV318,SHL,Sterling Heights PL SHL NO PACK
+500,ZV818,SHL,Sterling Heights PL SHL NO PACK
 300,ZV320,,Sturgis Library
 500,ZX010,SLC,Suburban Library Cooperative SLC
 200,ZV321,,Sunfield Dist Library
@@ -695,10 +696,10 @@
 500,ZV342,62,Walled Lake City Library NO PACK
 500,ZF016,,Walsh College
 200,Z8012,,Walton Erickson Public Library
-500,ZV344,WMB,Warren PL BURNETTE BR WMB NO PACK
-500,ZV344,WDB,Warren PL BUSCH BR WDB NO PACK
-500,ZV344,WCV,Warren PL CIVIC CTR BR WCV NO PACK
-500,ZV344,WAM,Warren PL MILLER BR WAM NO PACK
+500,ZV844,WMB,Warren PL BURNETTE BR WMB NO PACK
+500,ZV844,WDB,Warren PL BUSCH BR WDB NO PACK
+500,ZV844,WCV,Warren PL CIVIC CTR BR WCV NO PACK
+500,ZV844,WAM,Warren PL MILLER BR WAM NO PACK
 500,ZC027,,Washtenaw Comm Coll
 500,ZV346,64,WaterFORD Twp PL MAIN  NO PACK
 400,ZV123,,WaterTOWN Township Library
