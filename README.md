@@ -8,7 +8,7 @@
 </ul>
 <h4 id="bkmrk-to-use">To Use</h4>
 <ul id="bkmrk-download-the-precomp">
-<li class="null">Download the precompiled executable and template from the latest release. Save both files to the same directory.</li>
+<li class="null">Download the zip file in the latest release. Extract all of its files to the same directory.</li>
 <li class="null">Edit lending library information and logo in MeL Sticky Label.dotx as needed.</li>
 <li class="null">Run MEL-Label-Print.exe.<br></li>
 <li class="null">Labels will print to your PC's default printer.</li>
