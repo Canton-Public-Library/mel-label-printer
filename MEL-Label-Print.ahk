@@ -52,7 +52,7 @@ LocName		:= ""
 ;
 ;			Each field is stored into the table matrix LocTable.
 ;	
-UrlDownloadToFile, https://portal.cantonpl.org/docs/_layouts/15/DocIdRedir.aspx?ID=CANTONPL-34-32396, MEL-Locations.csv		
+UrlDownloadToFile, https://github.com/Canton-Public-Library/mel-label-printer/raw/refs/heads/main/MEL-Locations.csv, MEL-Locations.csv		
 Loop, Read, MEL-Locations.csv
 {
     LocationIndex := A_Index
@@ -87,6 +87,7 @@ If (ErrorLevel <> 0)
 ;===================== Set the Default Printer and Get the User's Initials.
 ;
 RunWait, rundll32 printui.dll PrintUIEntry /y /n "EPSON TM-T88IV ReStick"
+;RunWait, rundll32 printui.dll PrintUIEntry /y /n "EPSON TM-L90 Liner-Free"  ;JR testing using spare printer
 Sleep, 250
 ;			Request the user to enter their initials.
 ;
@@ -340,37 +341,43 @@ If (ItemNote <> "")
 	Sleep, 250
 }
 ;			Move down the page to the line with "Borrowing Library:" 
-Send {Down 2}
+Send {Down 8}		;JR- Send {Down 2} -> Send {Down 8}, original would put borrowing library in lending library field
 Sleep, 50
 ;			Move to the left margin.
 Send {Home}
 Sleep, 100
 ;			Move beyond the "Borrowing Library:" label.
-Send {Right 5}
-Sleep, 30
-Send {Right 5}
-Sleep, 30
-Send {Right 5}
-Sleep, 30
-Send {Right 4}
-Sleep, 30
+;Send {Right 5}
+;Sleep, 30
+;Send {Right 5}
+;Sleep, 30
+;Send {Right 5}
+;Sleep, 30
+;Send {Right 4}
+;Sleep, 30
 ;			Type the selected library location's name, but highlighted:
 ;				[Ctrl-B] to turn on then off bold
 ;				[Ctrl-]] to increase font one size, we do 4 times.
 ;				[Ctrl-[] to decrease font one size, we set it back.
-Send ^b%LocationText%   ^]
+Send ^b^]^]%LibLocation%   ^]		;Send ^b%LocationText%   ^]
 Sleep, 25
 Send ^]^]
 Sleep, 25
-Send ^]%LibLocation%^b^[
+Send ^]%LocationText%^b		;Send ^]%LibLocation%^b^[
 Sleep, 25
+Send ^e^[^[
+Sleep, 25	
 Send ^[^[
 Sleep, 25
-Send ^[{Del}
+Send ^[^[{Del}
 Sleep, 350
 ;
-;===================== Print the label to the default printer.
-Send ^p{Enter}
+;===================== Print the label to the default printer.	;JR: due to microsoft word being upgraded to 365- the ^p{Enter} shortcut doesn't work properly anymore; used the ribbon shortcuts to get it to auto print
+Send !f
+Sleep, 1500
+Send p
+Sleep, 1500
+Send p
 Sleep, 3500
 ;===================== Get Ready for Next Label by Undo-ing changes.
 ;			Undo is control-z.
@@ -393,7 +400,12 @@ WinActivate, - Word
 Sleep, 300
 Send !{F4}
 Sleep, 100
-Send n
+Loop 6			;JR: word was upgraded to 365 so the save dialogue box changed- ended up adding loop to tab over to don't save button as sneding the 'n' key no longer worked due to the dialouge box adding a 'save as' name field
+{
+	Send {Tab}
+}
+Sleep, 100
+Send {Enter}
 Sleep, 100
 ;
 MSGBOX,1,,%Reason%    Script is Ending.
