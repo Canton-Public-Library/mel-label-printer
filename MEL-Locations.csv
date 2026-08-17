@@ -14,7 +14,7 @@
 101,Z7001,JHS,Jeffers High School
 101,Z8001,,Calumet Public School Lib
 101,Z8004,,Gladstone SchPub Library
-101,Z8005,HAN,Hancock SchPub Lib
+101,Z8005,HAN,Hancock Area District Library
 400,Z8006,,Opperman Mem Library
 101,Z8007,,L'Anse SchPub Library
 101,Z8008,,Lake Linden-Hubbell SchPub Lib
@@ -728,7 +728,8 @@
 500,ZV614,36,Farmington Comm Lib FARMINGTON HILLS
 500,ZV625,,Frankenmuth Wickson District Library
 500,ZV634,,Otsego County Library
-500,ZV635,,Gladwin County District Library
+500,ZV635,,Gladwin County BEAVERTON GCB ZV135
+500,ZV635,,Gladwin County GCH ZV135
 500,ZV649,,Harrison District Library
 100,ZV667,HLK,Houghton Lake Public Lib HLK NO PACK
 500,ZV674,,Ruth Hughes Memorial District Library
